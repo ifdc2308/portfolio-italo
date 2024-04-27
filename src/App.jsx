@@ -1,15 +1,19 @@
-import { React } from "react";
-import { Container, Box } from "@mui/material";
-import ResponsiveAppBar from "./views/components/AppBar";
-import Footer from "./views/components/Footer";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Container } from '@mui/material';
+import ResponsiveAppBar from './views/components/AppBar';
+import Footer from './views/components/Footer';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
-    <Container maxWidth="xl">
+    <Router>
+      <Container maxWidth="xl">
         <ResponsiveAppBar />
-        
-      {/* <Footer /> */}
-    </Container>
+        <AppRoutes />
+        {/* <Footer /> */}
+      </Container>
+    </Router>
   );
 }
 
