@@ -1,15 +1,15 @@
-import { React, useState } from "react";
-import SearchAppBar from "./views/home";
-import Container from "@mui/material/Container";
+import { React } from "react";
+import { Container, Box } from "@mui/material";
+import ResponsiveAppBar from "./views/components/AppBar";
+import Footer from "./views/components/Footer";
 
 function App() {
   return (
-    <>
-    <SearchAppBar />
-      <Container fixed sx={{ width: "100vw" }}>
+    <Container maxWidth="xl">
+        <ResponsiveAppBar />
         
-      </Container>
-    </>
+      {/* <Footer /> */}
+    </Container>
   );
 }
 
