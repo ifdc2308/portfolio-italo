@@ -23,10 +23,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{background: "#E0E0E0"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <CodeIcon sx={{ display: { xs: 'none', md: 'flex' }, color: "#1E2025", mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#1E2025',
               textDecoration: 'none',
             }}
           >
@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="#1E2025"
             >
               <MenuIcon />
             </IconButton>
@@ -71,18 +71,22 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#1E2025',
               textDecoration: 'none',
             }}
           >
             ID-Dev
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{
+      flexGrow: 1,
+      display: { xs: 'none', md: 'flex' },
+      justifyContent: 'flex-end'  // Alinha os itens à direita
+    }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#1E2025', display: 'block' }}
               >
                 {page}
               </Button>
