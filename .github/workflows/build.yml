@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout code
@@ -24,7 +24,12 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+        run: |
+          rm -rf public
+          mkdir public
+          cp -r dist/* public/
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add public
+          git commit -m "Deploy to GitHub Pages"
+          git push origin master
