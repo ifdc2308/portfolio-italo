@@ -2,6 +2,7 @@ import { Container, Stack, Grid, Typography as Text, Avatar, Button, Tooltip } f
 import { GitHub, WhatsApp, Instagram } from '@mui/icons-material';
 import images from '../assets';
 import { Projects } from './components/Projects';
+import { Footer } from './components/Footer';
 
 export const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ export const HomePage = () => {
               <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
             </Stack>
             <Text sx={styles.desc}>Me chamo Ítalo, tenho 24 anos e trabalho há 2 anos com desenvolvimento Web. Ao longo da minha jornada na programação, já tive experências com diversas tecnologias e times de desenvolvimento, como também rotinas e metodologias.</Text>
-            <Button sx={{ color: "#A1A1AA", border: "1px solid #A1A1AA" }} variant="outlined" startIcon={<WhatsApp sx={{ color: "#25D366" }} />} onClick={() => window.open('https://api.whatsapp.com/send?phone=5571985018352&text=Ol%C3%A1%20%C3%ADtalo%2C%20preciso%20falar%20contigo%20sobre%20assuntos%20de%20desenvolvimento', '_blank')}>
+            <Button sx={{ color: "#fff", border: "1px solid #A1A1AA" }} variant="outlined" startIcon={<WhatsApp sx={{ color: "#25D366" }} />} onClick={() => window.open('https://api.whatsapp.com/send?phone=5571985018352&text=Ol%C3%A1%20%C3%ADtalo%2C%20preciso%20falar%20contigo%20sobre%20assuntos%20de%20desenvolvimento', '_blank')}>
               Converse comigo
             </Button>
           </Grid>
@@ -56,6 +57,7 @@ export const HomePage = () => {
           </Grid>
         </Grid>
         <Projects/>
+        <Footer />
       </Container>
     </>
   );

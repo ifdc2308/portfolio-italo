@@ -1,4 +1,4 @@
-import { Grid, Typography as Text, Card, CardMedia, CardContent, Chip, Stack, backdropClasses} from '@mui/material';
+import { Grid, Typography as Text, Card, CardMedia, CardContent, Chip, Stack} from '@mui/material';
 // import { GitHub, WhatsApp, Instagram } from '@mui/icons-material';
 import images from '../../assets';
 

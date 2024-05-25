@@ -1,32 +1,45 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Stack, Typography as Text } from '@mui/material';
+import { GitHub, Instagram, Mail } from '@mui/icons-material';
 
-export default function Footer() {  
+
+export const Footer = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          width: '100%',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
+          <Stack direction="row" spacing={1} sx={{ paddingBlock: 2 }}>
+            <GitHub sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://github.com/ifdc2308', '_blank')} />
+            <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
+          </Stack>
+          <Text sx={styles.desc}>
+            <Mail sx={{ color: "#A1A1AA", pr: 2}}/>italoiddev@gmail.com
+          </Text>
+          <Text sx={styles.desc}>
+            2024 © ítalo Dórea - Desenvolvimento Web
+          </Text>
+        </Box>
+      </Box>
+
+    </>
   );
+}
+
+const styles = {
+  text: {
+      color: "#fff",
+      fontWeight: 400,
+      fontSize: 22,
+  },
+  desc: {
+      color: "#A1A1AA",
+      fontWeight: 400,
+      fontSize: 16,
+  },
 }
