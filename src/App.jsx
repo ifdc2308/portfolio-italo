@@ -1,10 +1,9 @@
 import { HomePage } from './views/HomePage';
-
 function App() {
   return (
     <>
       <HomePage />
-    </>
+      </>
   );
 }
 
