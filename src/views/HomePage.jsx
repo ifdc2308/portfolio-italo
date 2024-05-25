@@ -1,4 +1,4 @@
-import { Container, Box, Stack, Grid, Typography as Text, Avatar, Button } from '@mui/material';
+import { Container, Box, Stack, Grid, Typography as Text, Avatar, Button, Tooltip } from '@mui/material';
 import { GitHub, WhatsApp, Instagram } from '@mui/icons-material';
 import images from '../assets';
 
@@ -26,13 +26,27 @@ export const HomePage = () => {
             <Grid item>
               <Text sx={styles.subTitle}>Tecnologias</Text>
               <Stack direction="row" spacing={1} sx={{ pt: 2 }}>
+              <Tooltip title="React.js" placement="bottom">
               <Avatar alt="reactjs" src={images?.reactLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="CSS" placement="bottom">
               <Avatar alt="cssLogo" src={images?.cssLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="HTML" placement="bottom">
               <Avatar alt="htmlLogo" src={images?.htmlLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="Javascript" placement="bottom">
               <Avatar alt="jsLogo" src={images?.jsLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="Tailwind.css" placement="bottom">
               <Avatar alt="tailwindLogo" src={images?.tailwindLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="Material UI" placement="bottom">
               <Avatar alt="muiLogo" src={images?.muiLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
+              <Tooltip title="Wordpress" placement="bottom">
               <Avatar alt="wordpressLogo" src={images?.wordpressLogo} sx={{ width: 45, height:45 }} />
+              </Tooltip>
               </Stack>
             </Grid>
           </Grid>
