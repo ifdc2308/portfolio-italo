@@ -14,12 +14,12 @@ export const HomePage = () => {
                 <Text sx={styles.title}>Desenvolvedor Front-end</Text>
               </Stack>
             <Stack direction="row" spacing={1} sx={{pt: 2}}>
-            <GitHub sx={{ color: "#A1A1AA" }} />
-            <Instagram sx={{ color: "#A1A1AA" }} />
+            <GitHub sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://github.com/ifdc2308', '_blank')} />
+            <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
             </Stack>
             <Text sx={styles.desc}>Me chamo Ítalo, tenho 24 anos e trabalho há 2 anos com desenvolvimento Web. Ao longo da minha jornada na programação, já tive experências com diversas tecnologias e times de desenvolvimento, como também rotinas e metodologias.</Text>
-            <Button sx={{ color: "#A1A1AA", border: "1px solid #A1A1AA" }} variant="outlined" startIcon={<WhatsApp sx={{ color: "#25D366" }} />}>
-              Entre em contato
+            <Button sx={{ color: "#A1A1AA", border: "1px solid #A1A1AA" }} variant="outlined" startIcon={<WhatsApp sx={{ color: "#25D366" }}/>} onClick={() => window.open('https://api.whatsapp.com/send?phone=5571985018352&text=Ol%C3%A1%20%C3%ADtalo%2C%20preciso%20falar%20contigo%20sobre%20assuntos%20de%20desenvolvimento', '_blank')}>
+              Converse comigo
             </Button>
           </Grid>
           <Grid item xs={12} sm={5} container alignItems="flex-end">
@@ -28,7 +28,11 @@ export const HomePage = () => {
               <Stack direction="row" spacing={1} sx={{ pt: 2 }}>
               <Avatar alt="reactjs" src={images?.reactLogo} sx={{ width: 45, height:45 }} />
               <Avatar alt="cssLogo" src={images?.cssLogo} sx={{ width: 45, height:45 }} />
-              <Avatar alt="cssLogo" src={images?.htmlLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="htmlLogo" src={images?.htmlLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="jsLogo" src={images?.jsLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="tailwindLogo" src={images?.tailwindLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="muiLogo" src={images?.muiLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="wordpressLogo" src={images?.wordpressLogo} sx={{ width: 45, height:45 }} />
               </Stack>
             </Grid>
           </Grid>
