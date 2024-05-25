@@ -1,14 +1,14 @@
 import { Container, Box, Stack, Grid, Typography as Text, Avatar, Button } from '@mui/material';
 import { GitHub, WhatsApp, Instagram } from '@mui/icons-material';
-import profileImage from '../assets/profile_italo_dorea.jpg';
+import images from '../assets';
 
 export const HomePage = () => {
   return (
     <>
       <Container maxWidth="lg" sx={styles.container}>
-        <Grid container spacing={2}>
+        <Grid container spacing={4}>
           <Grid item xs={12} sm={7}>
-              <Avatar alt="italo_dorea" src={profileImage} sx={{ width: 100, height: 100 }} />
+              <Avatar alt="italo_dorea" src={images?.profileImage} sx={{ width: 110, height: 110 }} />
               <Stack spacing={0}>
                 <Text sx={styles.subTitle}>Ítalo Dórea</Text>
                 <Text sx={styles.title}>Desenvolvedor Front-end</Text>
@@ -22,8 +22,15 @@ export const HomePage = () => {
               Entre em contato
             </Button>
           </Grid>
-          <Grid item xs={12} sm={5}>
-            <Text>Aqui vai ter uma imagem de background</Text>
+          <Grid item xs={12} sm={5} container alignItems="flex-end">
+            <Grid item>
+              <Text sx={styles.subTitle}>Tecnologias</Text>
+              <Stack direction="row" spacing={1} sx={{ pt: 2 }}>
+              <Avatar alt="reactjs" src={images?.reactLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="cssLogo" src={images?.cssLogo} sx={{ width: 45, height:45 }} />
+              <Avatar alt="cssLogo" src={images?.htmlLogo} sx={{ width: 45, height:45 }} />
+              </Stack>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
