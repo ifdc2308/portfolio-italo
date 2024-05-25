@@ -1,14 +1,29 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import { Box, Grid } from '@mui/material';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import { Container, Box, Grid, Typography as Text, Avatar, Divider } from '@mui/material';
 
-export const HomePage = () => {  
+export const HomePage = () => {
   return (
-    <Box>
-      <p>conteudo content</p>
-    </Box>
+    <>
+      <Container maxWidth="lg" sx={styles.container}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+          <Avatar alt="italo_dorea" src="../assets/profile_italo_dorea.jpg" />
+            <Text>Ítalo Dórea</Text>
+            <Text>Desenvolvedor Front-end</Text>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Text>Entrar em contato</Text>
+          </Grid>
+        </Grid>
+      </Container>
+    </>
   );
+};
+
+const styles = {
+  container: {
+    paddingBlock: 5,
+  },
+  title: {
+    color: "#fff",
+  },
 }
