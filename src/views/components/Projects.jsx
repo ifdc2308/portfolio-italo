@@ -5,6 +5,7 @@ import images from '../../assets';
 export const Projects = () => {
     return (
         <>
+        <Text sx={styles.subTitle}>Projetos que criei ou participei</Text>
             <Grid container spacing={4} sx={styles.section}>
                 <Grid item xs={12} sm={4}>
                     <Card sx={styles.cards}>
@@ -77,7 +78,7 @@ export const Projects = () => {
 
 const styles = {
     section: {
-        paddingBlock: 10,
+        paddingBlock: 5,
     },
     cards: {
         background: "#262b32",
@@ -90,6 +91,13 @@ const styles = {
     tags: {
 
     },
+    subTitle: {
+        color: "#fff",
+        fontWeight: 600,
+        fontSize: 28,
+        paddingTop: 5,
+      },
+
     text: {
         color: "#fff",
         fontWeight: 400,
