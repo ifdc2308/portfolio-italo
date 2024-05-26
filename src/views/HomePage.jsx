@@ -1,5 +1,5 @@
 import { Container, Stack, Grid, Typography as Text, Avatar, Button, Tooltip } from '@mui/material';
-import { GitHub, WhatsApp, Instagram } from '@mui/icons-material';
+import { GitHub, WhatsApp, Instagram, LinkedIn } from '@mui/icons-material';
 import images from '../assets';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
@@ -17,6 +17,7 @@ export const HomePage = () => {
             </Stack>
             <Stack direction="row" spacing={1} sx={{ pt: 2 }}>
               <GitHub sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://github.com/ifdc2308', '_blank')} />
+              <LinkedIn sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://www.linkedin.com/in/%C3%ADtalo-d%C3%B3rea-b11625184/', '_blank')} />
               <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
             </Stack>
             <Text sx={styles.desc}>Me chamo Ítalo, tenho 24 anos e trabalho há 2 anos com desenvolvimento Web. Ao longo da minha jornada na programação, já tive experências com diversas tecnologias e times de desenvolvimento, como também rotinas e metodologias.</Text>

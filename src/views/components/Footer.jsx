@@ -1,5 +1,5 @@
 import { Box, Stack, Typography as Text } from '@mui/material';
-import { GitHub, Instagram, Mail } from '@mui/icons-material';
+import { GitHub, Instagram, Mail, LinkedIn } from '@mui/icons-material';
 
 
 export const Footer = () => {
@@ -16,6 +16,7 @@ export const Footer = () => {
         <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
           <Stack direction="row" spacing={1} sx={{ paddingBlock: 2 }}>
             <GitHub sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://github.com/ifdc2308', '_blank')} />
+            <LinkedIn sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://www.linkedin.com/in/%C3%ADtalo-d%C3%B3rea-b11625184/', '_blank')} />
             <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
           </Stack>
           <Text sx={styles.desc}>
