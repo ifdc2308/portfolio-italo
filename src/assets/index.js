@@ -13,6 +13,8 @@ import figmaLogo from './figma.png';
 import gestaotributaria from './gestaotributaria.png';
 import exito1000 from './exito1000.png';
 import locmais from './locmaisba.png';
+import htmlConverter from './modelo-html-1.jpg';
+import dmadv from './dmadv.png';
 
 const images = {
   profileImage,
@@ -27,6 +29,8 @@ const images = {
   gestaotributaria,
   exito1000,
   locmais,
+  htmlConverter,
+  dmadv,
   
 };
 
