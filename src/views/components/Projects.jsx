@@ -34,10 +34,8 @@ export const Projects = () => {
                 <Chip label="React.JS" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Sistema de informação fiscal e módulos complementares na área
-                tributária. Neste projeto usando React.js Atuo como Front-end
-                criando telas, definições de UI / UX, manutenção do sistema e
-                aplicação de novas funcionalidades.
+                Software de pesquisa, módulo EFD-Reinf e complementares na área
+                tributária. Atuo como front-end na aplicação de novas de funcionalidades, UI/UX e outros.
               </Text>
             </CardContent>
           </Card>
@@ -61,9 +59,8 @@ export const Projects = () => {
                 <Chip label="Wordpress" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Site empresarial da plataforma de redações Exito 1000, atuando
-                como front-end responsável pela desenvolvimento e manutenção das
-                páginas, além de melhorias de UI / UX.
+                Site da plataforma de redações Exito 1000, responsável pela desenvolvimento e manutenção das
+                páginas, além de melhorias de UI/UX.
               </Text>
             </CardContent>
           </Card>
@@ -96,23 +93,25 @@ export const Projects = () => {
         <Grid item xs={12} sm={4}>
           <Card
             sx={styles.cards}
-            onClick={() => window.open("https://locmaisba.com.br/", "_blank")}
+            onClick={() =>
+              window.open("https://cnpj-pesquisar.netlify.app/", "_blank")
+            }
           >
             <CardMedia
               component="img"
               alt="green iguana"
               height="170"
-              image={images?.locmais}
+              image={images?.cnpjSearch}
             />
             <CardContent>
-              <Text sx={styles.text}>Locmais</Text>
+              <Text sx={styles.text}>Pesquisa CNPJ</Text>
               <Stack direction="row" spacing={2} sx={{ paddingBlock: 1 }}>
-                <Chip label="Wordpress" size="small" sx={styles.chips} />
+                <Chip label="TypeScript" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Site institucional de empresa de locação de equipamentos, fui
-                resposável por projetar o design e desenvolvedor o sites, suas
-                páginas e lógica de cadastro de produtos.
+                Ferramenta de consulta de dados de empresas brasileiras, atavés
+                do CNPJ. Todas as informações que você precisa sobre uma empresa
+                em um só lugar.
               </Text>
             </CardContent>
           </Card>
@@ -139,9 +138,32 @@ export const Projects = () => {
                 <Chip label="Javascript" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Mini projeto criado para reforçar conhecimentos em Javascript e
-                auxiliar usuários que precisam saber o que determinado contéudo
-                HTML visualmente tratado significa.
+                Mini projeto criado para auxiliar usuários que precisam saber o que determinado contéudo
+                HTML, visualmente tratado, significa.
+              </Text>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Card
+            sx={styles.cards}
+            onClick={() => window.open("https://locmaisba.com.br/", "_blank")}
+          >
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image={images?.locmais}
+            />
+            <CardContent>
+              <Text sx={styles.text}>Locmais</Text>
+              <Stack direction="row" spacing={2} sx={{ paddingBlock: 1 }}>
+                <Chip label="Wordpress" size="small" sx={styles.chips} />
+              </Stack>
+              <Text sx={styles.desc}>
+                Site institucional de empresa de locação de equipamentos, fui
+                resposável por projetar design e desenvolvedor o sites, suas
+                páginas e lógica de cadastro de produtos.
               </Text>
             </CardContent>
           </Card>
@@ -158,11 +180,12 @@ const styles = {
   cards: {
     background: "#262b32",
     maxWidth: 345,
+    height: 400,
     color: "#fff",
     cursor: "pointer",
-    '&:hover': {
-        transform: "scale(1.03)"
-      }
+    "&:hover": {
+      transform: "scale(1.03)",
+    },
   },
   chips: {
     background: "#A1A1AA",
