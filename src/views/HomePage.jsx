@@ -13,14 +13,14 @@ export const HomePage = () => {
             <Avatar alt="italo_dorea" src={images?.profileImage} sx={{ width: 110, height: 110 }} />
             <Stack spacing={0}>
               <Text sx={styles.subTitle}>Ítalo Dórea</Text>
-              <Text sx={styles.title}>Desenvolvedor Front-end</Text>
+              <Text sx={styles.title}>Desenvolvedor de Softwares</Text>
             </Stack>
             <Stack direction="row" spacing={1} sx={{ pt: 2 }}>
               <GitHub sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://github.com/ifdc2308', '_blank')} />
               <LinkedIn sx={{ color: "#A1A1AA", cursor: "pointer" }} onClick={() => window.open('https://www.linkedin.com/in/%C3%ADtalo-d%C3%B3rea-b11625184/', '_blank')} />
               <Instagram sx={{ color: "#A1A1AA", cursor: "pointer" }} />
             </Stack>
-            <Text sx={styles.desc}>Me chamo Ítalo, tenho 24 anos e trabalho há 2 anos com desenvolvimento Web. Ao longo da minha jornada na programação, já tive experências com diversas tecnologias e times de desenvolvimento, como também rotinas e metodologias.</Text>
+            <Text sx={styles.desc}>Me chamo Ítalo, tenho 24 anos e trabalho há 2,5 anos com desenvolvimento de Softwares. Ao longo da minha jornada na programação, já tive experências com diversas tecnologias e times de desenvolvimento, como também rotinas e metodologias.</Text>
             <Button sx={{ color: "#fff", border: "1px solid #A1A1AA" }} variant="outlined" startIcon={<WhatsApp sx={{ color: "#25D366" }} />} onClick={() => window.open('https://api.whatsapp.com/send?phone=5571985018352&text=Ol%C3%A1%20%C3%ADtalo%2C%20preciso%20falar%20contigo%20sobre%20assuntos%20de%20desenvolvimento', '_blank')}>
               Converse comigo
             </Button>
@@ -41,11 +41,14 @@ export const HomePage = () => {
                 <Tooltip title="Javascript" placement="bottom">
                   <Avatar alt="jsLogo" src={images?.jsLogo} sx={{ width: 45, height: 45 }} />
                 </Tooltip>
+                <Tooltip title="TypeScript" placement="bottom">
+                  <Avatar alt="tsLogo" src={images?.tsLogo} sx={{ width: 42, height: 42 }} />
+                </Tooltip>
                 <Tooltip title="Tailwind.css" placement="bottom">
                   <Avatar alt="tailwindLogo" src={images?.tailwindLogo} sx={{ width: 45, height: 45 }} />
                 </Tooltip>
                 <Tooltip title="Material UI" placement="bottom">
-                  <Avatar alt="muiLogo" src={images?.muiLogo} sx={{ width: 45, height: 45 }} />
+                  <Avatar alt="muiLogo" src={images?.muiLogo} sx={{ width: 42, height: 42 }} />
                 </Tooltip>
                 <Tooltip title="Figma" placement="bottom">
                   <Avatar alt="fiigma" src={images?.figmaLogo} sx={{ width: 45, height: 45 }} />

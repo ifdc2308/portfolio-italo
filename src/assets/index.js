@@ -3,6 +3,7 @@ import reactLogo from "./react.png";
 import cssLogo from "./css.png";
 import htmlLogo from "./html.png";
 import jsLogo from "./js.png";
+import tsLogo from "./typescript.png";
 import tailwindLogo from "./tailwind.png";
 import wordpressLogo from "./wordpress.png";
 import muiLogo from "./mui.png";
@@ -23,6 +24,7 @@ const images = {
   cssLogo,
   htmlLogo,
   jsLogo,
+  tsLogo,
   tailwindLogo,
   wordpressLogo,
   muiLogo,
