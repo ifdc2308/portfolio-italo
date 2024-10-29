@@ -13,7 +13,7 @@ import figmaLogo from "./figma.png";
 
 import gestaotributaria from "./gestaotributaria.png";
 import exito1000 from "./exito1000.png";
-import locmais from "./locmaisba.png";
+import a4locadora from "./a4locadora.png";
 import htmlConverter from "./modelo-html-1.jpg";
 import dmadv from "./dmadv.png";
 import cnpjSearch from "./cnpjSearch.png";
@@ -31,7 +31,7 @@ const images = {
   figmaLogo,
   gestaotributaria,
   exito1000,
-  locmais,
+  a4locadora,
   htmlConverter,
   dmadv,
   cnpjSearch,

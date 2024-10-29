@@ -35,7 +35,8 @@ export const Projects = () => {
               </Stack>
               <Text sx={styles.desc}>
                 Software de pesquisa, módulo EFD-Reinf e complementares na área
-                tributária. Atuo como front-end na aplicação de novas de funcionalidades, UI/UX e outros.
+                tributária. Atuo como front-end na aplicação de novas de
+                funcionalidades, UI/UX e outros.
               </Text>
             </CardContent>
           </Card>
@@ -59,8 +60,9 @@ export const Projects = () => {
                 <Chip label="Wordpress" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Site da plataforma de redações Exito 1000, responsável pela desenvolvimento e manutenção das
-                páginas, além de melhorias de UI/UX.
+                Site da plataforma de redações Exito 1000, responsável pela
+                desenvolvimento e manutenção das páginas, além de melhorias de
+                UI/UX.
               </Text>
             </CardContent>
           </Card>
@@ -138,8 +140,8 @@ export const Projects = () => {
                 <Chip label="Javascript" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Mini projeto criado para auxiliar usuários que precisam saber o que determinado contéudo
-                HTML, visualmente tratado, significa.
+                Mini projeto criado para auxiliar usuários que precisam saber o
+                que determinado contéudo HTML, visualmente tratado, significa.
               </Text>
             </CardContent>
           </Card>
@@ -147,23 +149,22 @@ export const Projects = () => {
         <Grid item xs={12} sm={4}>
           <Card
             sx={styles.cards}
-            onClick={() => window.open("https://locmaisba.com.br/", "_blank")}
+            onClick={() => window.open("https://a4locadora.com.br/", "_blank")}
           >
             <CardMedia
               component="img"
               alt="green iguana"
               height="170"
-              image={images?.locmais}
+              image={images?.a4locadora}
             />
             <CardContent>
-              <Text sx={styles.text}>Locmais</Text>
+              <Text sx={styles.text}>A4 locadora</Text>
               <Stack direction="row" spacing={2} sx={{ paddingBlock: 1 }}>
                 <Chip label="Wordpress" size="small" sx={styles.chips} />
               </Stack>
               <Text sx={styles.desc}>
-                Site institucional de empresa de locação de equipamentos, fui
-                resposável por projetar design e desenvolvedor o sites, suas
-                páginas e lógica de cadastro de produtos.
+                landing page de vendas da empresa de A4 Locadora de motos, projeto
+                de Design, landing page de conversão e reserva das motos.
               </Text>
             </CardContent>
           </Card>
