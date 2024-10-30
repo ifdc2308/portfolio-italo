@@ -48,7 +48,7 @@ export const HomePage = () => {
             <Text sx={styles.desc}>
               Desenvolvedor de Software Pleno, apaixonado por criar soluções
               práticas e inovadoras. Ao longo da minha carreira, trabalhei com
-              diversos proetos e tecnologias, sempre colaborando para soluções e
+              diversos projetos e tecnologias, sempre colaborando para soluções e
               valorizando o aprendizado e o crescimento.
             </Text>
             <Button
@@ -168,7 +168,7 @@ const styles = {
     paddingBlock: 5,
     color: "#A1A1AA",
     fontWeight: 400,
-    fontSize: 20,
+    fontSize: 19,
   },
   sections: {
     paddingBlock: 10,
