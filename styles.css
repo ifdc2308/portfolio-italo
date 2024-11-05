@@ -1,5 +1,5 @@
 html {
-  background-color: #000000;
+  background-color: #9a9a9a;
   padding-inline: 20%;
   padding-block: 2%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -16,6 +16,9 @@ html {
 .profile-img {
   width: 120px;
   border-radius: 100px;
+}
+.icons-page {
+  width: 22px;
 }
 
 h1 {
