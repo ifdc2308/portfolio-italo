@@ -29,6 +29,58 @@ h2 {
   color: #afafaf;
   font-size: 18px;
 }
+
+/* card projets */
+.card {
+  display: flex;
+  align-items: stretch; /* Garantir que ambos os lados do card tenham altura igual */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.card-content {
+  padding: 20px;
+  width: 40%; /* Ajusta para metade do card */
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-image {
+  width: 60%; /* Ajusta para metade do card */
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block; /* Remove espaço em branco abaixo da imagem */
+}
+
 /* whatsapp button */
 .float {
   position: fixed;
