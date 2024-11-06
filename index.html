@@ -1,13 +1,170 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/code-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Italo Dórea | Desenv. Web</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/code-logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <title>Italo Dórea | Desenv. Web</title>
+  <!-- whatsapp button -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section id="profile">
+    <div>
+      <img class="profile-img" src="/src/assets/profile_italo_dorea.jpg">
+      <h1>Ítalo Dórea</h1>
+      <h1>Analista e desenvolvedor de softwares</h1>
+      <div>
+        <a href="https://github.com/ifdc2308" target="_blank" rel="noopener noreferrer">
+          <img class="icons-page" src="/src/assets/icons/github.svg" alt="GitHub Profile">
+        </a>
+        <a href="https://www.linkedin.com/in/%C3%ADtalo-d%C3%B3rea-b11625184/" target="_blank"
+          rel="noopener noreferrer">
+          <img class="icons-page" src="/src/assets/icons/linkedin.svg" />
+        </a>
+        <a href="https://www.instagram.com/italo_dorea/" target="_blank" rel="noopener noreferrer">
+          <img class="icons-page" src="/src/assets/icons/instagram.svg" />
+        </a>
+      </div>
+      <h2>Desenvolvedor de Software Pleno, apaixonado por criar soluções
+        práticas e inovadoras. Ao longo da minha carreira, trabalhei com
+        diversos projetos e tecnologias, sempre colaborando para soluções e
+        valorizando o aprendizado e o crescimento.</h2>
+    </div>
+  </section>
+  <section id="stack">
+    <h2>Tecnologias</h2>
+    <div>
+      <img class="icons-stack" src="/src/assets/icons/javascript.svg" />
+      <img class="icons-stack" src="/src/assets/icons/html.svg" />
+      <img class="icons-stack" src="/src/assets/icons/css.svg" />
+      <img class="icons-stack" src="/src/assets/icons/node.svg" />
+      <img class="icons-stack" src="/src/assets/icons/react.svg" />
+      <img class="icons-stack" src="/src/assets/icons/figma.svg" />
+      <img class="icons-stack" src="/src/assets/icons/wordpress.svg" />
+    </div>
+  </section>
+  <section id="projects">
+    <h1>Projetos que criei ou participei</h1>
+    <div class="projects-section">
+      <a href="https://gestaotributaria.com.br/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/gestaotributaria.png" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Gestão Tributária</h2>
+            <span class="card-tag">React.js</span>
+            <p class="card-description">
+              Software de pesquisa, módulo EFD-Reinf e complementares na área tributária. Atuo como front-end na
+              aplicação
+              de novas de funcionalidades, UI/UX e outros.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://redacaoexito1000.com.br/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/exito1000.png" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Redação Êxito 1000</h2>
+            <span class="card-tag">Wordpress</span>
+            <p class="card-description">
+              Site da plataforma de redações Exito 1000, responsável pela desenvolvimento e manutenção das páginas, além
+              de melhorias de UI/UX.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://dmadvocacia.com.br/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/dmadv.png" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">D&M Advocacia</h2>
+            <span class="card-tag">HTML</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">Javascript</span>
+            <p class="card-description">
+              Site institucional para escritório especializado em Direito Tributário e Empresarial, estabelecido em
+              Salvador.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://cnpj-pesquisar.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/cnpjSearch.png" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Pesquisa CNPJ</h2>
+            <span class="card-tag">TypeScript</span>
+            <p class="card-description">
+              Ferramenta de consulta de dados de empresas brasileiras, atavés do CNPJ. Todas as informações que você
+              precisa sobre uma empresa em um só lugar.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://ifdc2308.github.io/htmlConverter/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/modelo-html-1.jpg" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Conversor HTML</h2>
+            <span class="card-tag">Javascript</span>
+            <p class="card-description">
+              Ferramenta de auxilio, trata contéudo HTML e converte conteúdo em padrão HTML.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://a4locadora.com.br/" target="_blank" rel="noopener noreferrer">
+        <div class="card">
+          <div class="card-image">
+            <img src="/src/assets/a4locadora.png" alt="Imagem do Card">
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">A4 Locadora</h2>
+            <span class="card-tag">Wordpress</span>
+            <p class="card-description">
+              Landing page de vendas da empresa A4 Locadora de motos, projeto de Design, landing page de conversão e
+              reserva das motos.
+            </p>
+          </div>
+        </div>
+      </a>
+  </section>
+  <a href="https://api.whatsapp.com/send?phone=5571985018352&text=Ol%C3%A1%20%C3%ADtalo%2C%20preciso%20falar%20contigo%20sobre%20assuntos%20de%20desenvolvimento"
+    class="float" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <footer>
+    <div class="icons-footer">
+      <a href="https://github.com/ifdc2308" target="_blank" rel="noopener noreferrer">
+        <img class="icons-page" src="/src/assets/icons/github.svg" alt="GitHub Profile">
+      </a>
+      <a href="https://www.linkedin.com/in/%C3%ADtalo-d%C3%B3rea-b11625184/" target="_blank" rel="noopener noreferrer">
+        <img class="icons-page" src="/src/assets/icons/linkedin.svg" />
+      </a>
+      <a href="https://www.instagram.com/italo_dorea/" target="_blank" rel="noopener noreferrer">
+        <img class="icons-page" src="/src/assets/icons/instagram.svg" />
+      </a>
+      <h3><img class="icons-page" src="/src/assets/icons/email.svg">italoiddev@gmail.com</h3>
+    </div>
+    <div class="footer-section">
+      <h3>2024 © Ítalo Dórea - Desenvolvimento de softwares</h3>
+    </div>
+  </footer>
+  <script></script>
+</body>
+
 </html>
