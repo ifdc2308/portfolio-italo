@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="src/assets/code-logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <title>Ítalo Dórea | Development</title>
   <meta name="description"
     content="Ítalo Dórea - Desenvolvedor de Software com experiência em front-end, back-end e UX/UI. Criando soluções práticas para melhorar a experiência do usuário.">
@@ -28,7 +28,10 @@
     <div data-aos="fade-right">
       <img class="profile-img" src="src/assets/profile_italo_dorea.jpg" alt="imagem de perfil" loading="lazy">
       <h1>Ítalo Dórea</h1>
-      <h1>Software Analyst and Developer</h1>
+      <h1>Software Analyst and Developer
+        <img class="icons-page" src="src/assets/icons/share.svg" alt="instagram icon" loading="lazy"
+          onclick="printPage()" style="cursor: pointer;" />
+      </h1>
       <div>
         <a href="https://github.com/ifdc2308" target="_blank" rel="noopener noreferrer">
           <img class="icons-page" src="src/assets/icons/github.svg" alt="GitHub Profile" loading="lazy">
@@ -51,10 +54,11 @@
     <h2>Technologies</h2>
     <div>
       <img class="icons-stack" src="src/assets/icons/javascript.svg" alt="" loading="lazy" />
+      <img class="icons-stack" src="src/assets/icons/typescript.svg" alt="" loading="lazy" />
+      <img class="icons-stack" src="src/assets/icons/react.svg" alt="" loading="lazy" />
+      <img class="icons-stack" src="src/assets/icons/node.svg" alt="" loading="lazy" />
       <img class="icons-stack" src="src/assets/icons/html.svg" alt="" loading="lazy" />
       <img class="icons-stack" src="src/assets/icons/css.svg" alt="" loading="lazy" />
-      <img class="icons-stack" src="src/assets/icons/node.svg" alt="" loading="lazy" />
-      <img class="icons-stack" src="src/assets/icons/react.svg" alt="" loading="lazy" />
       <img class="icons-stack" src="src/assets/icons/figma.svg" alt="" loading="lazy" />
       <img class="icons-stack" src="src/assets/icons/wordpress.svg" alt="" loading="lazy" />
     </div>
@@ -181,6 +185,10 @@
       delay: 100, // values from 0 to 3000, with step 50ms
       duration: 2000, // values from 0 to 3000, with step 50ms 
     });
+
+    function printPage() {
+      window.print();
+    }
   </script>
 </body>
 
